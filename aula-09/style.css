@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+    --cor-01: #d96704;
+    --cor-box-shadow: #eb6a0096;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.cabecalho {
+    width: 100%;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+.cabecalho span {
+    color: var(--cor-01);
+    font-size: 18px;
+}
+
+.main {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.card {
+    flex: 0 1 300px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px 1px var(--cor-box-shadow);
+}
+
+.container-img {
+    height: 200px;
+}
+
+.container-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.container-info {
+    padding: 0px 10px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-info h3 {
+    font-size: 18px;
+    color: var(--cor-01);
+}
+
+.container-preco {
+    padding: 10px;
+    border-top: 1px solid var(--cor-01);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-icone {
+    padding: 5px;
+    border: 1px solid var(--cor-1);
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+  }
