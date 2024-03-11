@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 5px;
+        }
+
+        input {
+            margin-top: 5px;
+        }
+
+        label {
+            margin-top: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>TELA DE LOGIN</h1>
+    <label>Login</label>
+    <input type="text" name="txtlogin" id="txtlogin">
+
+    <label>Senha</label>
+    <input type="password" name="Senha" id="txtsenha">
+
+    <input type="button" value="Entrar" onclick="entrar()">
+
+    <div id="res"></div>
+</body>
+
+<script>
+
+    function entrar() {
+        var login = window.document.getElementById('txtlogin').value;
+        var senha = window.document.getElementById('txtsenha').value;
+        var res = window.document.getElementById('res');
+
+        if (login === 'Warlles' && senha === '123') {
+            res.innerHTML = `<p>Login bem-sucedido, Sr. <strong>${login}</strong></p>`;
+        } else {
+            res.innerHTML = `<p>Login mal-sucedido, Sr. <strong>${login}</strong></p>`;
+        }
+    }
+
+</script>
+</html>

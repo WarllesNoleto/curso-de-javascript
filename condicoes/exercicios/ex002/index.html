@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+
+    <section>
+        <div id="msg">
+            <p>
+                Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano">
+            </p>
+            <p>
+                Sexo: 
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+
+                <p>
+                    <input type="button" value="Verificar" onclick="verificar()">
+                </p>
+            </p>
+        </div>
+        <div id="res">
+            <p>
+                Preencha os dados acima para ver o resultado!
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>©️ Warlles Noleto</p>
+    </footer>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
